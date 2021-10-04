@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href = CSSestilo.css>
+    <meta http-equiv="Content-Type" content="text/html; 
+    charset=iso-8859-1" />
+    <title>Taller 5 - JavaScript</title>
+    </head>
+
+    <body style="background-color: tomato;">
+        <script src="taller5.js"></script>
+        <div class = "container" style="background-color:#90caf9; margin-top:30px; margin-bottom: 30px ; border:solid 0.3cm;">
+            <div class = "form" style="margin: 10px; height: 16cm; line-height:0.5px" >
+                <div id= "fila1" class= "row">
+                    <div id = "titulo1" class ="col s12">
+                        <center>
+                        <h3> <b>FORMULARIO DE REGISTRO</b></h3>
+                        </center>
+                    </div>
+                </div>
+                <form  method = GET class="col s12" onsubmit="validar1()">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="idusuario" type="text"  size=25>
+                            <label for="idusuario" style="font-weight: bold;" >Id_Usuario</label>
+        
+                        </div>
+                        <div class="col s6">
+                            <div class="row">
+                            <label style="font-weight: bold;">Id_Pais</label>
+                             </div>
+                             <div class="row " style="margin-top:0.2px">
+                            <select class="browser-default">
+                                <option value="value0" disabled selected>Elija una opcion</option>
+                                <option value="value1">Argentina</option>
+                                <option value="value2">Bolivia</option>
+                                <option value="value3">Brasil</option>
+                                <option value="value4">Chile</option>
+                                <option value="value5">Colombia</option>
+                                <option value="value6">Ecuador</option>
+                                <option value="value7">Paraguay</option>
+                                <option value="value8">Perú</option>
+                                <option value="value9">Uruguay</option>
+                                <option value="value10">Venezuela</option>
+                            </select>
+                        </div>
+                           
+                                
+                            
+                        </div>
+                    </div>
+                    <br/>
+                    <div class = "row">
+                        <div class="input-field col s5">
+                            <input id="Nombre" type="text" class="validate">
+                            <label for="Nombre" style="font-weight: bold;">Nombre</label>
+                        </div>
+                        <div class = "input-field col s7">
+                            <input id="Apellidos" type="text" class="validate">
+                            <label for="Apellidos" style="font-weight: bold;">Apellidos</label>
+                        </div>
+                    </div>
+                    <br/>
+                    
+                    <div class = "row">
+                        <div class = "input-field col s12">
+                            <input id="Direccion" type="text" class="validate">
+                            <label for="Direccion" style="font-weight: bold;" >Direccion</label>
+                        </div>
+                    </div>
+                    <br/>
+                    
+                    <div class = "row">
+                        <div class = "input-field col s6">
+                            <input id="CC" type="text" class="validate">
+                            <label for="CC" style="font-weight: bold;">Cedula de ciudadania de usuario</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <input id="Ccpassword" type="password" class="validate">
+                            <label for="Ccpassword" style="font-weight: bold;">CCpassword</label>
+                            
+                        </div>
+                        <div class="input-field col s3">
+                        <input id="Ccpassword2" type = "password" class="validate">
+                            <label for="Ccpassword2" style="font-weight: bold;">Confirme</label>
+                        </div>
+                    </div>
+                    <br/>
+                    
+                    <div class = "row">
+                        <div class = "input-field col s8">
+                            <input id="email" type="text" class="validate">
+                            <label for="email" style="font-weight: bold;">Email</label>
+                        </div>
+                        <div class = "input-field col s4">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="telefono" type="number" class="validate">
+                            <label for="telefono" style="font-weight: bold;">Telefono</label>
+                        </div>
+                    </div>
+                    <br/>
+       
+                    <center>
+                    <div class = "input-field">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Registrar
+                        <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                     </center>
+                     
+                     <div class="section s4"> 
+                        <p>
+                          <label>
+                            <i class="material-icons prefix"> favorite</i>
+                            <input name="group1" type="checkbox" onclick="mostrar();" />
+                            
+                            <span>Gustos</span>
+                          </label>
+                        </p>
+                        </div>
+  
+                        <div class="section" id="ocultoxd" >
+                          <h4>Gustos</h4>
+                          
+                          <div class="input-field col s6">
+                            <i class="material-icons prefix ">brush</i>
+                            <input id="nombre" type="text" class="validate">
+                            <label for="Nombre">Color favorito</label>
+                          </div>
+                          <div class="input-field col s6">
+                            <i class="material-icons prefix ">airport_shuttle</i>
+                            <input id="apellido" type="text" class="validate">
+                            <label for="Apellido">Marca de carro favorita</label>
+                          </div>
+                          <div class="input-field col s12">
+                            <i class="material-icons prefix ">directions_car</i>
+                            <input id="direccion" type="text" class="validate">
+                            <label for="icon_prefix">Modelo de carro favorito</label>
+                          </div>
+                          <div class="section s8" >
+                            <h6>Cuanto dinero desea gastar en un auto</h6>
+                            <p class="range-field">
+                              <input type="range" id="test5" min="0" max="10000000000" />
+                            </p>
+                        
+                          </div>      
+                </form>
+            </div>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        
+    </body>
+</html>
