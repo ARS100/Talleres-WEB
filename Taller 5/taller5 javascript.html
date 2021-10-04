@@ -4,15 +4,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href = CSSestilo.css>
-    <meta http-equiv="Content-Type" content="text/html; 
+        <link href = CSSestilo.css>
+    <meta http-equiv="Content-Type" content="text/html;
     charset=iso-8859-1" />
     <title>Taller 5 - JavaScript</title>
     </head>
 
-    <body style="background-color: tomato;">
+    <body style="background-color: #E7EAE8;"  onload ="ocultar()">
         <script src="taller5.js"></script>
-        <div class = "container" style="background-color:#90caf9; margin-top:30px; margin-bottom: 30px ; border:solid 0.3cm;">
+
+        <div class = "container" style="background-color:#90caf9; margin-top:30px; margin-bottom: 30px ; border:solid 0.3cm;" >
             <div class = "form" style="margin: 10px; height: 16cm; line-height:0.5px" >
                 <div id= "fila1" class= "row">
                     <div id = "titulo1" class ="col s12">
@@ -24,11 +25,11 @@
                 <form  method = GET class="col s12" onsubmit="validar1()">
                     <div class="row">
                         <div class="input-field col s6">
-                            
+
                             <i class="material-icons prefix">account_circle</i>
                             <input id="idusuario" type="text"  size=25>
                             <label for="idusuario" style="font-weight: bold;" >Id_Usuario</label>
-        
+
                         </div>
                         <div class="col s6">
                             <div class="row">
@@ -49,9 +50,9 @@
                                 <option value="value10">Venezuela</option>
                             </select>
                         </div>
-                           
-                                
-                            
+
+
+
                         </div>
                     </div>
                     <br/>
@@ -66,7 +67,7 @@
                         </div>
                     </div>
                     <br/>
-                    
+
                     <div class = "row">
                         <div class = "input-field col s12">
                             <input id="Direccion" type="text" class="validate">
@@ -74,7 +75,7 @@
                         </div>
                     </div>
                     <br/>
-                    
+
                     <div class = "row">
                         <div class = "input-field col s6">
                             <input id="CC" type="text" class="validate">
@@ -83,7 +84,7 @@
                         <div class="input-field col s3">
                             <input id="Ccpassword" type="password" class="validate">
                             <label for="Ccpassword" style="font-weight: bold;">CCpassword</label>
-                            
+
                         </div>
                         <div class="input-field col s3">
                         <input id="Ccpassword2" type = "password" class="validate">
@@ -91,7 +92,7 @@
                         </div>
                     </div>
                     <br/>
-                    
+
                     <div class = "row">
                         <div class = "input-field col s8">
                             <input id="email" type="text" class="validate">
@@ -104,7 +105,7 @@
                         </div>
                     </div>
                     <br/>
-       
+
                     <center>
                     <div class = "input-field">
                         <button class="btn waves-effect waves-light" type="submit" name="action">Registrar
@@ -112,23 +113,23 @@
                         </button>
                     </div>
                      </center>
-                     
-                     <div class="section s4"> 
+
+                     <div class="section s4">
                         <p>
                           <label>
-                            <i class="material-icons prefix"> favorite</i>
+                            <i class="material-icons prefix" style = "color: #07F7F3"> favorite</i>
                             <input name="group1" type="checkbox" onclick="mostrar();" />
-                            
+
                             <span>Gustos</span>
                           </label>
                         </p>
                         </div>
-  
+
                         <div class="section" id="ocultoxd" >
                           <h4>Gustos</h4>
-                          
+
                           <div class="input-field col s6">
-                            <i class="material-icons prefix ">brush</i>
+                            <i class="material-icons prefix " >brush</i>
                             <input id="nombre" type="text" class="validate">
                             <label for="Nombre">Color favorito</label>
                           </div>
@@ -147,14 +148,31 @@
                             <p class="range-field">
                               <input type="range" id="test5" min="0" max="10000000000" />
                             </p>
-                        
-                          </div>      
+
+                          </div>
                 </form>
             </div>
         </div>
-    
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        
-        
+
+
+        <script>
+             document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
+        </script>
+
+        <script type="text/javascript">
+          function mostrar(){
+            document.getElementById('ocultoxd').style.display= 'block';
+
+
+          }
+
+
+        </script>
+
     </body>
 </html>

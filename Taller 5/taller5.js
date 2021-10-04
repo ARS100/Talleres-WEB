@@ -19,7 +19,7 @@ function validar1() {
 
     if(miNombre.length >= 25){
         alert('La longitud maxima es 25')
-        
+
     }
 
     var apellidoo = document.getElementById("Apellidos").value;
@@ -29,7 +29,7 @@ function validar1() {
 
     if(apellidoo.length >= 25){
         alert('La longitud maxima es 25')
-        
+
     }
     var MiCadena = document.getElementById("Direccion").value;
     var cadenaI = MiCadena.slice(0,3);
@@ -60,14 +60,14 @@ function validar1() {
     if(contadoor==1){
         contadoor=2;
     }
-    
+
     var CCus = document.getElementById("CC").value;
 
     if(CCus.length == 0)
     {
         alert('Inserte la CCusuario')
     }
-    
+
     if(CCus.length < 10 && CCus.length!=0)
     {
         alert('El cc usuario debe contener entre 10-20 caracteres')
@@ -76,29 +76,44 @@ function validar1() {
     {
         alert('El cc usuario debe contener entre 10-20 caracteres')
     }
-    
+
     var pass1 = document.getElementById("Ccpassword").value;
     if(pass1.length < 15){
-        alert('Contraseña muy corta')  
+        alert('Contraseña muy corta')
     }
     if(pass1.length > 20){
-        alert('Contraseña muy larga')  
+        alert('Contraseña muy larga')
     }
-    
+
     var pass2 = document.getElementById('Ccpassword2').value;
-     
-   
+
+
         if (pass1 != pass2) {
-            
+
             alert('Contraseñas diferentes')
         } else {
             setTimeout(function() {
                 location.reload();
-            }, 3000); 
+            }, 3000);
     }
     var tEmail = document.getElementById("email").value;
     if(tEmail.length>125){
         alert('El email supero su limite de caracteres')
     }
 }
+function mostrar(){
+  document.getElementById('ocultoxd').style.display= 'block';
+}
 
+document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('.parallax');
+var instances = M.Parallax.init(elems);});
+
+document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('select');
+var instances = M.FormSelect.init(elems);
+});
+
+function ocultar(){
+  document.getElementById('ocultoxd').style.display='none';
+}
