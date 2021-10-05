@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html >
+
+<head> 
+    <title>carrcss </title>
+    <link href="carrcss.css" rel="stylesheet" >
+ </head>
+<body>
+    <div class = "idfull">
+        <h1> Formulario de registro </h1>
+        <form method=GET >
+            <div >
+                Id coche
+                <input type = "number">
+            </div>
+                <br/>
+                <div>
+                movido a
+                <select name="Id_movidoa">
+                    <option value="value1" selected disabled>Elija una opción</option>
+                        <option value="1">gasolina</option>
+                        <option value="2">diesel</option>
+                        <option value="3">electrico</option>
+                        <option value="4">gas</option>
+                </select>
+            </div>
+                <br/>
+              <div> tipo de coche
+                <select name="id_tipocoche">
+                    <option value="0" selected disabled>Elija una opción</option>
+                    <option value="1">urbano</option>
+                    <option value="2">deportivo</option>
+                    <option value="3">camioneta</option>
+                    <option value="4">familiar</option> 
+                    <option value="5">sedan</option> 
+                    <option value="6">comercial</option> 
+                    <option value="7">pick up</option> 
+                    <option value="8">clasico </option>  
+            </select>
+            </div>
+            <br/>
+            <div>
+                Estado del coche  
+                <select name="id_estado">
+                    <option value= "0 " selected disabled>Elija una opción</option>
+                    <option value="1">Excelente</option>
+                    <option value="2"> bien</option>
+                    <option value="3">regular</option>
+                    <option value="4">mal</option> 
+                    <option value="5">desastroso </option> 
+                </select>
+            </div>
+            <br/>
+            <div>
+            Marca
+            <select name="id_marca">
+                <option value= "0 " selected disabled>Elija una opción</option>
+                <option value="1">mazda</option>
+                <option value="2"> chevrolet</option>
+                <option value="3">Reanult</option>
+                <option value="4">Nissan</option> 
+                <option value="5">Kia </option> 
+                <option value="6">toyota </option> 
+                <option value="7">Volkswagen </option> 
+                <option value="8">suzuki </option> 
+                <option value="9">Hyundai </option> 
+                <option value="10">Ford </option>
+                <option value="11">Volvo</option> 
+                <option value="12">BMW </option> 
+                <option value="13">Audi </option> 
+                <option value="14">Jeep </option> 
+                <option value="15">Mercedes Benz </option>  
+            </select>
+            </div>
+            <div>
+                <br>
+
+                id usuario
+            <input type = "number">
+            </div>
+            <br/>
+            Modelo
+            <textarea name="Modelo" rows="1" cols="20"> </textarea>
+            <br/>
+            <br/>
+            Año
+            <input name = "Año", type="text", size = 4>
+            <br/>
+            <br/>
+            Detalles
+            <textarea name="Detalles" rows="1" cols="20"> </textarea>
+            <br/>
+            <br/>
+            Caja
+            <input name = "Caja", type="number">
+            <br/>
+            <br/>
+            motor
+            <input name = "motor", type="float", size = 2.2>
+            <br/>
+            <br/>
+            Fechapub
+            <input type="text" name="Fechapub">
+            <br/>
+            <br/>
+            Precio
+            <input name = "precio", type="number", size = 20>
+            <br/>
+            <br/>
+             Moneda
+             <select name="Moneda">
+                <option value="value1" selected disabled>Elija una opción</option>
+                    <option value="1">COP</option>
+                    <option value="2">DOL</option>
+                    <option value="3">LIB</option>
+                    <option value="4">EUR</option>
+             </select>
+            <br/>
+          <br/>
+          Descripciones del coche
+            <div id="Descript">
+            <textarea class="texto" name="cc_pic01"  maxlength="45" cols="20" rows="2"></textarea>
+            <textarea class="texto" name="cc_pic02"  maxlength="45" cols="20" rows="2"></textarea>
+            <textarea class="texto" name="cc_pic03"  maxlength="45" cols="20" rows="2"></textarea>
+        </div>
+            <input type = "submit" name = "registro"   value = "Registro" >
+        
+        </form>
+        <br/>
+    </div>
+</body>
+</html>

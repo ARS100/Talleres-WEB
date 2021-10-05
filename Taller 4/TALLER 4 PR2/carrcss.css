@@ -1,0 +1,38 @@
+body{
+    background: #5cb6d6;
+    text-align: center;
+    text-transform: capitalize;
+    justify-content: center;
+
+  }
+html h1{
+    color:rgb(223, 12, 12);
+    
+}
+.idfull{
+    
+    border: 4px solid #36ec88;
+    border-width: 0.5cm;
+    border-radius: 0.5cm;
+    border-style:solid;
+    margin:10%;
+    margin-top:0%;
+}
+
+.ids{
+    background-color: #969A9B;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+input[type="submit" i] {
+    background-color: rgb(236, 96, 2); 
+      color: black; 
+      border: 5px double #000000;
+}
+#Descript {
+    margin-left: 130px;
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+    width: 750px;
+}

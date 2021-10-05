@@ -1,0 +1,156 @@
+<html lang="es">
+    <head>
+        <title>carbootstrap</title>
+        <link rel="stylesheet" type="text/css" href="boostrap.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <form action="carbootstrap.html" id="form1">
+            <div id="formulario">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend class="text-center header">Formulario del coche</legend>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Id del coche</i></span>
+                                        <div class="col-md-8">
+                                            <input id="id_coche" name="id_coche" type="number" placeholder="ID del coche" class="form-control" min="1" max="99999999999" step="1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Combustible usado por el auto</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="id_movidoa" name="id_movidoa">
+                                                <option value="111">gasolina</option>
+                                                <option value="112">eléctrico</option>
+                                                <option value="113">Gas</option>
+                                                <option value="114">híbrido</option>
+                                            </select><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Tipo de coche</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="id_tipocoche" name="id_tipocoche">
+                                            <option value="101">mecánico</option>
+                                            <option value="102">automático</option>
+                                        </select><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Estado del coche</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="id_estado" name="id_estado">
+                                            <option value="111">Nuevo</option>
+                                            <option value="222">Usado</option>
+                                        </select><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Marca del coche</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="id_marca" name="id_marca">
+                                            <option value="011">mazda</option>
+                                            <option value="012">honda</option>
+                                            <option value="013">bmw</option>
+                                            <option value="014">ford</option>
+                                            <option value="015">renault</option>
+                                        </select><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                        <div class="col-md-8">
+                                            <input id="modelo" name="modelo" type="text" placeholder="Modelo del coche" class="form-control" maxlength="60">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                        <div class="col-md-8">
+                                            <input id="año" name="año" type="text" placeholder="Año" class="form-control" maxlength="4">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                        <div class="col-md-8">
+                                            <textarea id="detalle" name="detalle" placeholder="detalles del producto" class="form-control" rows="8" cols="20" maxlength="500">
+                                            </textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                        <div class="col-md-8">
+                                            <input id="caja" name="caja" type="number" placeholder="Caja del coche" class="form-control" min="1" max="999" step="1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                        <div class="col-md-8">
+                                            <input id="motor" name="motor" type="number" placeholder="Motor del coche" class="form-control" min="1" max="999" step="1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                        <div class="col-md-8">
+                                            <input id="fechapub" name="fechapub" type="text" placeholder="Fechapub" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                        <div class="col-md-8">
+                                            <input id="precio" name="precio" type="number" placeholder="Precio" class="form-control" min="1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Moneda de pago</span>
+                                        <div class="col-md-8">
+                                            <select class="input" id="moneda" name="moneda">
+                                            <option value="dolar">DOL</option>
+                                            <option value="pesosCOL">COP</option>
+                                            <option value="euro">EUR</option>
+                                        </select><br><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center">Descripciones del coche</span>
+                                        <div id="col-md-8">
+                                            <textarea class="texto" name="cc_pic01" id="cc_pic01" maxlength="85" rows="10" cols="30"></textarea>
+                                            <textarea class="texto" name="cc_pic02" id="cc_pic02" maxlength="85" cols="30" rows="10"></textarea>
+                                            <textarea class="texto" name="cc_pic03" id="cc_pic03" maxlength="85" cols="30" rows="10"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Guardar Cambios</button>
+                                            <button type="reset" class="btn btn-primary btn-lg">Restablecer</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>  
+        </form>
+    </body>
+</html>

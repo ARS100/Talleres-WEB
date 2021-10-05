@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+    <title>CarPro</title>
+
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+    <link rel = "stylesheet"
+       href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel = "stylesheet"
+       href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type = "text/javascript"
+       src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script> 
+    
+    <script>
+       $(document).ready(function() {
+          $('select').material_select();
+       });
+    </script>
+</head>
+
+<div class=>
+<body class="blue">
+   
+     
+    <div class="row">
+      
+  <h2 class="left-align" >Formulario coche</h2>
+
+     </div>
+ 
+   
+    <br>
+    
+        <div class="card">
+            <div class="card-content " >
+            
+            <form id="Formulario" action="carMaterialize.html">
+
+                <div class="form-group hoverable ">
+                    <label>ID del coche</label>
+                    <input type="number" class ="input-field" id="id_coche" min="1" max="99999999999" step="1" placeholder="ID">
+                </div>
+              
+                    <div class="form-group hoverable">
+                        <div class ="input-field col l4">
+                            <select >
+                                 <option disabled="disabled" selected="selected">Elegir</option>
+                                <option>Diesel</option>
+                                <option>Corriente</option>
+                                <option>Gas</option>
+                                <option>Electricidad</option>
+                            </select>
+                            <label>Combustible usado por el auto</label>
+                        </div>
+                        
+                </div>
+                <div class="form-group hoverable">
+                    <div class ="input-field col l4">
+                        <select >
+                            <option disabled="disabled" selected="selected">Elegir</option>
+                           <option>Familiar</option>
+                           <option>Sencillo</option>
+                           <option>Camioneta</option>
+                       </select>
+                        <label>Tipo de coche</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group hoverable">
+                    <div class ="input-field col l4">
+                        <select >
+                            <option disabled="disabled" selected="selected">Elegir</option>
+                            <option>Nuevo</option>
+                            <option>Usado</option>
+                          
+                       </select>
+                       <label>Estado</label>
+                    
+                    </div>
+                </div>
+
+
+                <div class="form-group hoverable">
+                    <div class ="input-field col l4">
+                        <select >
+                            <option disabled="disabled" selected="selected">Elegir</option>
+                            <option>mazda</option>
+                            <option>honda</option>
+                            <option>bmw</option>
+                            <option>ford</option>
+                            <option>renault</option>
+                       </select>
+                        <label>Marca</label>
+                    </div>
+                </div>
+
+                <div class="form-group hoverable">
+                    <label >Modelo</label>
+                   <textarea class="materialize-textarea input-field"></textarea>
+                 
+                </div>
+
+
+                <div class="form-group hoverable">
+                    <label for="Anio">Año</label>
+                    <input type="text" class="input-field" >
+                    
+                </div>
+
+
+                <div class="form-group hoverable">
+                     <label >Detalle</label>
+                   <textarea class="materialize-textarea input-field"></textarea>
+                </div>
+
+
+                <div class="form-group hoverable">
+                    <label for="Caja">Caja</label>
+                    <input type="text" class="input-field">
+                </div>
+
+
+                <div class="form-group hoverable ">
+                    <label for="Motor">Motor</label>
+                    <input type="text" class="input-field" >
+                </div>
+
+
+                <div class="form-group hoverable">
+                    <label for="FechaPu">Fecha Publicacion</label>
+                    <input type="text" class="input-field">
+                </div>
+
+                <div class="form-group hoverable">
+                    <label for="Precio">Precio</label>
+                    <input type="text" class="input-field">
+                </div>
+                <div class="form-group hoverable">
+                    <div class="input-field col 14">
+                        <select>
+                            <option disabled="disables" selected="selected">Elegir</option>
+                            <option>COP</option>
+                            <option>EUR</option>
+                            <option>DOL</option>
+                        </select>
+                    </div>
+                </div>
+             
+                <div class="form-group hoverable">
+                    <label for="PIC1">CC_PIC1</label>
+                    <input type="text" class="input-field" id="PIC1">
+                </div>
+
+                <div class="form-group hoverable">
+                    <label for="PIC2">CC:PIC2</label>
+                    <input type="text" class="input-field" id="PIC2">
+                </div>
+                <div class="form-group hoverable">
+                    <label for="PIC3">CC_PIC3</label>
+                    <input type="text" class="input-field" id="PIC3">
+                </div>
+                <div class="form-group hoverable">
+                    <label for="Destacado">CC_Destacado</label>
+                    <input type="text" class="input-field" id="Destacado">
+                </div>
+                <div class="card-action">
+                    <button type="submit" class=" btn waves-effect waves-ligth orange " >Sing in<i class="material-icons right">cloud</i></button>
+                </div>
+        </div>
+    </div>
+</div>
+    <br>
+    </form>
+    
+</body>
+
+</html>
