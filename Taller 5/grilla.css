@@ -1,0 +1,12 @@
+#main-container {
+    background-color: #3949AB;
+}
+
+h1{
+    color: #3949AB;
+    font-weight: bold;
+}
+
+th i{
+    cursor: pointer;
+}

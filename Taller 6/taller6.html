@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href = CSSestilo.css>
+        <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+        <script src = "taller6.js"></script>
+        <title>Taller 6 - Web Server</title>
+    </head>
+
+    <body style="background-color: #E7EAE8;" onload = "ocultar()">
+        
+
+        <div class = "container" style="background-color:#90caf9; margin-top:30px; margin-bottom: 30px ; border:solid 0.3cm;"  >
+            <div class = "form" style="margin: 10px; height: 23cm; line-height:0.5px"  >
+                <div id= "fila1" class= "row">
+                    <div id = "titulo1" class ="col s12">
+                        <center>
+                        <h3> <b>FORMULARIO DE REGISTRO</b></h3>
+                        </center>
+                    </div>
+                </div>
+                <form  method = GET class="col s12" onsubmit = "validarPassword()">
+                    <div class="row">
+                        <div class="input-field col s6">
+
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="idusuario" type="text"  size=25>
+                            <label for="idusuario" style="font-weight: bold;" >Id_Usuario</label>
+
+                        </div>
+                        <div class="col s6">
+                            <div class="row">
+                            <label style="font-weight: bold;">Id_Pais</label>
+                             </div>
+                             <div class="row " style="margin-top:0.2px">
+                            <select class="browser-default">
+                                <option value="value0" disabled selected>Elija una opcion</option>
+                                <option value="value1">Argentina</option>
+                                <option value="value2">Bolivia</option>
+                                <option value="value3">Brasil</option>
+                                <option value="value4">Chile</option>
+                                <option value="value5">Colombia</option>
+                                <option value="value6">Ecuador</option>
+                                <option value="value7">Paraguay</option>
+                                <option value="value8">Perú</option>
+                                <option value="value9">Uruguay</option>
+                                <option value="value10">Venezuela</option>
+                            </select>
+                        </div>
+
+
+
+                        </div>
+                    </div>
+                    <br/>
+                    <div class = "row">
+                        <div class="input-field col s5">
+                            <input id="Nombre" type="text" class="validate">
+                            <label for="Nombre" style="font-weight: bold;">Nombre</label>
+                        </div>
+                        <div class = "input-field col s7">
+                            <input id="Apellidos" type="text" class="validate">
+                            <label for="Apellidos" style="font-weight: bold;">Apellidos</label>
+                        </div>
+                    </div>
+                    <br/>
+
+                    <div class = "row">
+                        <div class = "input-field col s9">
+                            <input id="Fechadenacimiento" type="date" class="validate"  onkeypress="ver(this.value)">
+                            <label for="Fechadenacimiento" style="font-weight: bold;" >Fecha de nacimiento</label>
+                        </div>
+                        <div id = "ocultoxd" class = "input-field col s3" >
+                            
+                        </div>
+                    </div>
+                    <br/>
+
+                    <div class = "row">
+                        <div class = "input-field col s6">
+                            <input id="usuario" type="text" class="validate" pattern="[A-Za-z0-9_-]{1,15}">
+                            <label for="usuario" style="font-weight: bold;">Usuario</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <input id="Contraseña" type="password" class="validate">
+                            <label for="Contraseña" style="font-weight: bold;">Password</label>
+
+                        </div>
+                        <div class="input-field col s3">
+                        <input id="Ccpassword" type = "password" class="validate" >
+                            <label for="Ccpassword" style="font-weight: bold;">Confirmation</label>
+                        </div>
+                    </div>
+                    <br/>
+
+                    <div class = "row">
+                        <div class = "input-field col s8">
+                            <input id="email" type="text" class="validate">
+                            <label for="email" style="font-weight: bold;">Email</label>
+                        </div>
+                        <div class = "input-field col s4">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="telefono" type="number" class="validate">
+                            <label for="telefono" style="font-weight: bold;">Telefono</label>
+                        </div>
+                    </div>
+                    <br/>
+                    <form class = "input-field">
+                        <p>
+                            &iquestHa tenido alguna enfermedad?
+                        </p>
+                        <div class = "row">
+                            <div>
+                                <label>
+                              
+                               
+                                <input name="group1"  type="radio"  onclick = "mostrar()"  > 
+                                <span>Si</span>
+
+                                   
+                                </label>  
+                            </div>                      
+                        </div>
+                            <div class = "row">
+                                
+                                <div id = "oculto">
+                                <select  name = "select">
+                                
+                                </select>
+                            
+                            </div>
+                            </div>
+                          
+                     
+                            <p>
+                              <label>
+                                <input name="group1" type="radio" onchange ="ocultar()" >
+                                <span>No</span>
+                              </label>
+                            </p>
+                        </form>
+                    <center>
+                    <div class = "input-field">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Registrar
+                        <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                     </center>
+                    
+                </form>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+        <script>
+         document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
+        </script>
+
+        <script type="text/javascript">
+          function mostrar(){
+            document.getElementById('oculto').style.display= 'block';
+          }
+        </script>
+        
+    </body>
+</html>

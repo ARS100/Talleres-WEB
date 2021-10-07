@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilla de usuarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="grilla.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="grilla.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid vw-100 vh-100 d-flex align-items-center justify-content-center" id="main-container">
+        <div class="col-12 row d-flex justify-content-center">
+            <div class="card col-11 p-4">
+                <h1 class="text-center mb-5">Usuarios</h1>
+                <div class="mb-3">
+                    <div class="col-3 float-end">
+                        <input type="text" class="form-control" placeholder="Filtro global" id="global-filter">
+                    </div>  
+                    <div class="col-3 row float-end mx-0 px-4 align-items-center">
+                        <span class="col"><strong>Límite de filas: </strong></span>
+                        <select class="form-control col" id="limit-filter">
+                            
+                        </select>
+                    </div>                                      
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
