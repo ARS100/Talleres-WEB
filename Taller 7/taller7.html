@@ -1,17 +1,19 @@
-<!DOCTYPE html>
+
 <html>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href = CSSestilo.css>
         <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
-        <script src = "taller6.js"></script>
-        <title>Taller 6 - Web Server</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Taller 7 - Ajax</title>
     </head>
 
-    <body style="background-color: #E7EAE8;" >
-        
+    <body style="background-color: #E7EAE8;">
+       
 
         <div class = "container" style="background-color:#90caf9; margin-top:30px; margin-bottom: 30px ; border:solid 0.3cm;"  >
             <div class = "form" style="margin: 10px; height: 23cm; line-height:0.5px"  >
@@ -73,9 +75,6 @@
                             <input id="Fechadenacimiento" type="date" class="validate"  onkeypress="ver(this.value)">
                             <label for="Fechadenacimiento" style="font-weight: bold;" >Fecha de nacimiento</label>
                         </div>
-                        <div id = "ocultoxd" class = "input-field col s3" >
-                            
-                        </div>
                     </div>
                     <br/>
 
@@ -107,47 +106,27 @@
                             <label for="telefono" style="font-weight: bold;">Telefono</label>
                         </div>
                     </div>
+                    
                     <br/>
-                    <form class = "input-field">
-                        <p>
-                            &iquestHa tenido alguna enfermedad?
-                        </p>
-                        <div class = "row">
-                            <div>
-                                <label>
-                              
-                               
-                                <input name="group1"  type="radio"  onclick = "mostrar()"  > 
-                                <span>Si</span>
-
-                                   
-                                </label>  
-                            </div>                      
+                    <br/>
+                    <div class = "row">
+                        Lugar de residencia
+                    </div>
+                    
+                    <br/>
+                    <br/> <div class = "row">
+                        <div class = "input-field col s8">
+                            <select class = "browser-default" id="departamentos">
+                                <option value="" disabled selected>Seleccione un departamento...</option>   
+                            </select>
                         </div>
-                            <div class = "row">
-                                
-                                <div id = "oculto">
-                                <select  name = "select" >
-                                    <option value="value0" selected>Ninguna</option>
-                                    <option value="value1" >Covid 19</option>
-                                    <option value="value2" >Gripa </option>
-                                    <option value="value3">VIH </option>
-                                    <option value="value3">Malaria </option>
-                                    <option value="value3">Varicela </option>
-                                    <option value="value3">Gastroenteritis virica </option>
-                                </select>
-                            
-                            </div>
-                            </div>
-                          
-                     
-                            <p>
-                              <label>
-                                <input name="group1" type="radio" onchange ="ocultar()" >
-                                <span>No</span>
-                              </label>
-                            </p>
-                        </form>
+                    <div class = "input-field col s4">
+                        <select class = "browser-default" id="ciudaddes" >
+                            <option value="" disabled selected>Seleccione una ciudad...</option>
+                        </select>
+                    </div>
+              
+                    </div>  
                     <center>
                     <div class = "input-field">
                         <button class="btn waves-effect waves-light" type="submit" name="action">Registrar
@@ -155,26 +134,11 @@
                         </button>
                     </div>
                      </center>
-                    
+                     
                 </form>
             </div>
         </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-        <script>
-         document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('select');
-        var instances = M.FormSelect.init(elems);
-      });
-        </script>
-
-        <script type="text/javascript">
-          function mostrar(){
-            document.getElementById('oculto').style.display= 'block';
-          }
-        </script>
         
     </body>
+    <script src="ajax.js"></script>    
 </html>
